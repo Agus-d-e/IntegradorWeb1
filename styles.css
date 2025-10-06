@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(255, 102, 0);
+}
+
+h1.title{
+    text-align: center;
+    margin: 0;
+    padding: auto;
+    flex: auto;
+    background-color: rgb(87, 136, 241);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#comm {
+    text-align: center;
+    margin: 0;
+    padding: auto;
+    flex: auto;
+    background-color: rgb(87, 136, 241);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    padding: auto;
+    flex: auto;
+    background-color: rgb(87, 136, 241);
+}
