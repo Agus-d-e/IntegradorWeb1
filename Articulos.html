@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel Estilizado</title>
+  <link rel="stylesheet" href="articulos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenido a la seccion de articulos.</h1>
+    <p>Aca encontrara las mejores guitarras y sus accesorios.</p>
+  </header>
+
+  <main>
+    <div class="carrusel">
+      <button class="btn-anterior">&#10094;</button>
+
+      <div class="carrusel-track">
+        <div class="carrusel-item actual"><img src="Imagenes/guitarraElectrica.jpg" alt="Guitarra Electrica"></div>
+        <div class="carrusel-item"><img src="Imagenes/guitarraAcustica.jpg" alt="Guitarra Acustica"></div>
+        <div class="carrusel-item"><img src="Imagenes/guitarraBlues.jpg" alt="Guitarra Blues"></div>
+      </div>
+
+      <button class="btn-siguiente">&#10095;</button>
+
+      <div class="indicadores">
+        <span class="indicador actual"></span>
+        <span class="indicador"></span>
+        <span class="indicador"></span>
+      </div>
+    </div>
+  </main>
+
+  <script src="articulos.js"></script>
+</body>
+</html>
