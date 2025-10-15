@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 102, 0);
+  background-color: rgb(68, 10, 10);
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
@@ -7,7 +7,19 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.title{
+  color: rgb(216, 214, 214);
+  text-shadow: 5px 5px #07141a;
+}
+#comm{
+  color: rgb(216, 214, 214);
+  text-shadow: 5px 5px #07141a;
+}
 
+p{
+  color: rgb(216, 214, 214);;
+  text-shadow: 2px 2px  #07141a;
+}
 
 header {
   background-color: rgb(87, 136, 241);
@@ -102,4 +114,42 @@ main {
 
 .indicador.actual {
   background-color: white;
+}
+
+.descripciones1{
+
+  display: flex;
+  flex-direction: column;
+  color: rgb(216, 214, 214);
+  background-color: #0f0f0f;
+  border:5px;
+  margin: auto;
+  padding: 20px;
+  width: 750px;
+  
+}
+
+.descripciones2{
+
+  display: flex;
+  flex-direction: row;
+  background-color: #0f0f0f;
+  color: rgb(216, 214, 214);
+  justify-content: flex-end;
+  border:5px;
+  width: 750px;
+  margin: auto;
+  padding: 20px;
+  
+}
+.descripciones3{
+
+  display: flex;
+  flex-direction: column;
+  color: rgb(216, 214, 214);
+  background-color: #0f0f0f;
+  border:5px;
+  width: 750px;
+  margin: auto;
+  padding: 20px;
 }
