@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: rgb(104, 31, 45);
+        background-color: rgb(216, 214, 214);
         margin: auto;
         padding: 20px;
         border: 2px solid black;
@@ -58,7 +58,7 @@
 </head>
 <body>
 
-  <form action="">
+  <form name="formulario" onsubmit="return ValidarFormulario(event)">
 
     <h1>Mandanos tu consulta</h1>
     <label for="nombre">Nombre:</label>
@@ -75,15 +75,26 @@
     <label for="telefono">Telefono</label>
     <input type="tel" id="telefono" name="telefono" required>
 
-    <label for="mensaje">Consulta</label>
-    <textarea name="mensaje" id="mensaje"></textarea>
+    <label for="Consulta">Consulta</label>
+    <textarea name="Consulta" id="Consulta"></textarea>
     
+   
+
     <div class="boton">
      <button type="submit" name="enviar">Enviar</button>   
     </div>
     
 
   </form>  
+  <span id="Error" style="color: red;"></span><br>
+  
+  <script>
+    function validacion(){
+     let formulario=document.forms["formulario"]
+      
 
+    }
+
+  </script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-function ValidarFormulario(){
+function ValidarFormulario(event){
+ event.preventDefault();
  let nombre=document.getElementById("nombre").value.trim();
  let apellido=document.getElementById("apellido").value.trim();
  let correo=document.getElementById("correo").value.trim();
@@ -30,12 +31,21 @@ let patron = /^[0-9]{10,15}$/;
  }
 
  //mostrar errores
+ /*
 if(mensaje!==""){
  document.getElementById("Error").innerHTML=mensaje;
  return false;   
 }
-
+*/
+const spanError = document.getElementById("Error");
+  if (mensaje !== "") {
+    spanError.innerHTML = mensaje;
+    return false;
+  } else {
+    spanError.innerHTML = "";
+    alert("✅ Formulario enviado correctamente!");
+    return true;
+  }
 //si pasa las validaciones
-alert("formulario enviado correctamente");
-return true;
+return false;
 }

@@ -21,18 +21,27 @@ p{
   text-shadow: 2px 2px  #07141a;
 }
 
-header {
-  background-color: rgb(87, 136, 241);
+header{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #0f0f0f;
   width: 100%;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
 }
 
-header h1 {
-  color: black;
-  font-size: 2rem;
-  margin: 0;
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+header a{
+  color: rgb(216, 214, 214);
+  text-decoration: none;
+  margin: 0px 5px;
 }
 
 main {
@@ -152,4 +161,20 @@ main {
   width: 750px;
   margin: auto;
   padding: 20px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #0f0f0f;
+  color:rgb(216, 214, 214) ;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+footer a{
+  color: rgb(216, 214, 214);
+  text-decoration: none;
+  margin: 2px 5px;
 }
