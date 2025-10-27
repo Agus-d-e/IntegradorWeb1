@@ -1,0 +1,97 @@
+      *{
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box; 
+        font-family: inherit;
+      }
+      
+      body{
+        background-color: rgb(68, 10, 10);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+      }
+
+      header{
+       display: flex;
+       justify-content: flex-end;
+       background-color: #0f0f0f;
+       width: 100%;
+       text-align: center;
+       padding: 20px 0;
+       margin-bottom: 30px;
+        }
+      header nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      }
+
+      header a{
+       color: rgb(216, 214, 214);
+       text-decoration: none;
+       margin: 0px 5px;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(216, 214, 214);
+        margin: auto;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 400px;
+        height: 50%;
+        gap: 10px;
+      }
+      label{
+        font-weight: bold;
+      }
+      h1{
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+
+      }
+
+      input{
+
+        border-radius: 5px;
+      }
+      textarea{
+        height: 200px;
+        
+      }
+
+      button{
+        height: 30px;
+        width: 80px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+      }
+
+      .boton{
+        text-align: center;
+      }
+
+      footer{
+      display: flex;
+      justify-content: space-between;
+      background-color: #0f0f0f;
+      color:rgb(216, 214, 214) ;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      }
+
+      footer a{
+      color: rgb(216, 214, 214);
+      text-decoration: none;
+      margin-top: auto;
+      }
+
+      

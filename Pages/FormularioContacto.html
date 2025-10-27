@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/FormularioContacto.css">
+</head>
+<body>
+  <header>
+        <nav>
+          <a href="index.html"> 
+             <h2>Principal</h2>
+          </a> 
+         <a href="Articulos.html">
+          <h2>Catalogo</h2>
+         </a>
+          <a href="FormularioContacto.html">
+            <h2>Contacto</h2>
+          </a>
+          
+        </nav>
+  </header>
+
+  <form  novalidate onsubmit="return ValidarFormulario(event)">
+
+    <h1>Mandanos tu consulta</h1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" >
+    <span id="error-nombre" class="error-nombre"></span>
+
+    <label for="apellido">apellido:</label>
+    <input type="text" id="apellido" name="apellido" >
+    <span id="error-apellido" class="error-apellido"></span>
+   
+
+    <label for="correo">Correo Electronico:</label>
+    <input type="email" id="correo" name="correo"  >
+    <span id="error-correo" class="error-correo"></span>
+
+    <label for="telefono">Telefono</label>
+    <input type="tel" id="telefono" name="telefono" >
+    <span id="error-telefono" class="error-telefono"></span>
+
+    <label for="Consulta">Consulta</label>
+    <textarea name="Consulta" id="Consulta"></textarea>
+    <span id="error-consulta" class="error-consulta"></span>
+   
+
+    <div class="boton">
+     <button type="submit" name="enviar">Enviar</button>   
+    </div>
+    
+
+  </form>  
+  
+  
+  <footer>
+    <p>&copy; 2025 La Púa Dinámica. Todos los derechos reservados.</p>
+    <p>&#9993;Contacto: info@lapuadinamica.com</p>
+    <p>Direccion: Av illia 250</p>
+    <p>&#9990;Telefono: +54-2664742810</p>
+    <nav>
+        <a href="privacidad.html">Política de Privacidad</a> |
+        <a href="terminos.html">Términos de Servicio</a>
+    </nav>
+</footer>
+
+  <script src="../Scripts/FormularioContacto.js"></script>
+</body>
+</html>

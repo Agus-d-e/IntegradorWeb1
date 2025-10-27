@@ -1,51 +1,39 @@
 function ValidarFormulario(event){
- event.preventDefault();
+ 
  let nombre=document.getElementById("nombre").value.trim();
  let apellido=document.getElementById("apellido").value.trim();
  let correo=document.getElementById("correo").value.trim();
  let telefono=document.getElementById("telefono").value.trim();
- let mensaje="";
  
+ event.preventDefault();
  //validar nombre
 
  if(nombre===""){
-    mensaje+="el nombre es obligatorio.<br>";
+    document.getElementById("error-nombre").textContent="el nombre es obligatorio"
+    document.getElementById("error-nombre").style.color="red"
+ }else{
+   document.getElementById("error-nombre").textContent=""
  }
 
  //validar apellido
 
  if(apellido===""){
-    mensaje+="el apellido es obligatorio.<br>";
+    document.getElementById("error-apellido").textContent="el apellido es obligatorio"
+    document.getElementById("error-apellido").style.color="red"
+ }else{
+   document.getElementById("error-apellido").textContent=""
  }
 
  //validar email
  let patronEmail = /(\w+)+@(gmail|hotmail|yahoo|test)(\.com|\.edu|\.ar){1,2}/g;
  if(!patronEmail.test(email)){
-    mensaje+="debe ingresar un correo valido.<br>";
+    document.getElementById("error-correo").textContent="el correo debe tener una estructura algo@gmail.com"
  }
 
  //validar telefono
 let patron = /^[0-9]{10,15}$/;
  if(!patron.test(telefono)){
-    mensaje+="ingrese un numero de telefono valido(digitos de 10 a 15 caracteres)";
+   document.getElementById("error-telefono").textContent="ingrese un numero de telefono valido(digitos de 10 a 15 caracteres)"
  }
 
- //mostrar errores
- /*
-if(mensaje!==""){
- document.getElementById("Error").innerHTML=mensaje;
- return false;   
-}
-*/
-const spanError = document.getElementById("Error");
-  if (mensaje !== "") {
-    spanError.innerHTML = mensaje;
-    return false;
-  } else {
-    spanError.innerHTML = "";
-    alert("✅ Formulario enviado correctamente!");
-    return true;
-  }
-//si pasa las validaciones
-return false;
 }
