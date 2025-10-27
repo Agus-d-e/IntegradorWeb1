@@ -64,7 +64,7 @@ main {
   max-width: 800px;    
   height: 700px;
   border-radius: 10px;
-  object-fit: cover;   /* asegura que no se deforme */
+  object-fit: cover;  
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 

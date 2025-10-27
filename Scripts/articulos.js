@@ -1,7 +1,7 @@
 let imagenes=[
-    "imagenes/guitarraElectrica.jpg",
-    "imagenes/guitarraAcustica.jpg",
-    "imagenes/guitarraBlues.jpg"
+    "../Imagenes/guitarraElectrica.jpg",
+    "../Imagenes/guitarraAcustica.jpg",
+    "../Imagenes/guitarraBlues.jpg"
     
 ];
 
