@@ -48,4 +48,29 @@ let patron = /^[0-9]{10,15}$/;
 } else {
     document.getElementById("error-telefono").textContent = "";
 }
+
+function CrearElemento(){
+
+const nuevoDiv = document.createElement("div");
+const nombreNuevo=document.createElement("h3");
+const apellidoNuevo=document.createElement("h3");
+const telefonoNuevo=document.createElement("h3");
+const correoNuevo=document.createElement("h3");
+
+nombreNuevo.innerHTML=document.getElementById("nombre").value;
+apellidoNuevo.innerHTML=document.getElementById("apellido").value;
+telefonoNuevo.innerHTML=document.getElementById("telefono").value;
+correoNuevo.innerHTML=document.getElementById("correo").value;
+
+nuevoDiv.textContent = "soy un div";
+nuevoDiv.className = "div-creado";
+nuevoDiv.id = "div-creado";
+document.body.appendChild(nuevoDiv);
+document.nuevoDiv.appendChild(nombreNuevo);
+document.nuevoDiv.appendChild(apellidoNuevo);
+document.nuevoDiv.appendChild(telefonoNuevoNuevo);
+document.nuevoDiv.appendChild(correoNuevo);
+   
+}
+
 }

@@ -94,4 +94,16 @@
       margin-top: auto;
       }
 
+
+      .div-creado{
+        display: flex;
+        justify-content: space-between;
+        background-color: #0f0f0f;
+        color: rgb(216, 214, 214);
+        margin: auto;
+        border: 2px;
+        border-radius: 10px;
+        padding: 20px;
+        gap: 10px;
+      }
       
