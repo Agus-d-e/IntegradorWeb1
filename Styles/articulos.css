@@ -56,11 +56,12 @@ footer a{
   margin: 2px 5px;
 }
 
-.fondo{
-  margin-left: 135px;
-  justify-content: center;
-  height: 400px;
-  margin-left: 825px;
+#fondo{
+justify-items: center;
+}
+.imagen-fondo{
+  max-height: 700px;
+  max-width: 700px;
 }
 
 #inicio-articulos{

@@ -14,6 +14,7 @@ function mostrarImagen() {
   imagen.src = imagenes[actual];
 }
 
+
 atras.addEventListener("click",function(){
     actual-=1
     if(actual<0){
@@ -31,3 +32,9 @@ adelante.addEventListener("click",function(){
     }
     mostrarImagen();
 });
+
+setInterval(() => {
+    actual++;
+    if (actual >= imagenes.length) actual = 0;
+    mostrarImagen();
+}, 5000);

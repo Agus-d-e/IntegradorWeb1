@@ -11,6 +11,7 @@
         flex-direction: column;
         height: 100%;
         margin: 0;
+        gap: 10px;
       }
 
       header{
@@ -97,9 +98,14 @@
 
       .div-creado{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
         background-color: #0f0f0f;
         color: rgb(216, 214, 214);
+        max-width: 400px;
+        max-height: 400px;
         margin: auto;
         border: 2px;
         border-radius: 10px;
