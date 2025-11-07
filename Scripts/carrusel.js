@@ -33,6 +33,7 @@ adelante.addEventListener("click",function(){
     mostrarImagen();
 });
 
+
 setInterval(() => {
     actual++;
     if (actual >= imagenes.length) actual = 0;
